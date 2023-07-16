@@ -1,7 +1,25 @@
-html, body, main, section, header, ul, p, h1, h2, h3 {
-  font-family: {{{fontList 'default'}}};
+html,
+body,
+main,
+section,
+header,
+ul,
+p,
+h1,
+h2,
+h3 {
+  font-family: {
+      {
+        {
+        fontList 'default'
+      }
+    }
+  }
+
+  ;
   font-size: 12px;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
@@ -20,20 +38,23 @@ a:hover {
 
 h2 {
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 13px;
 }
 
 hr {
   border: none;
   border-top: 1px solid #B3B3B3;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main {
   padding: 15px;
-  max-width: 700px;
+  max-width: 82%;
   margin: 0 auto;
 }
 
@@ -49,8 +70,17 @@ h3 {
   margin-top: 1em;
 }
 
-p, li {
+p,
+li {
   text-align: justify;
+}
+
+.description {
+  margin-bottom: .5em;
+}
+
+.projects {
+  text-align: left;
 }
 
 .tenure {
@@ -61,7 +91,7 @@ thead {
   display: none;
 }
 
-main > header {
+main>header {
   width: 100%;
   float: left;
   margin-bottom: 0;
@@ -69,12 +99,18 @@ main > header {
 }
 
 
-main > header > h1 {
+main>header>h1 {
   float: left;
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-transform: uppercase;
   line-height: 1;
 }
+
+h3 {
+  display: inline-block;
+  line-height: 1;
+}
+
 #contact {
   float: right;
   position: absolute;
@@ -82,12 +118,89 @@ main > header > h1 {
   bottom: 0;
 }
 
-#contact > div {
+#contact>div {
   display: inline-block;
   margin-left: 5px;
 }
 
-h2 > span.fa {
+h2>span.fa {
   text-align: left;
   margin-right: 3px;
+}
+
+img {
+  height: 60px;
+  display: inline-block;
+}
+
+.logos {
+  align-content: center;
+  text-align: center;
+}
+
+.highlights-title {
+  display: block;
+}
+
+#summary {
+  overflow: auto;
+  gap: 10px;
+}
+
+#summary .text {
+  float: left;
+  width: 90%;
+  margin-top: 10px;
+}
+
+#summary .qr {
+  height: 55px;
+  margin: 0px 0px 5px 0px;
+  float: right;
+}
+
+.skills-table {
+  margin-top: 0.6em;
+}
+
+.employment-right {
+  float: right;
+  clear: right;
+}
+
+.employment-right-container {
+  margin-top: 10px;
+  width: 25%;
+}
+
+.employment-left-container {
+  width: 70%;
+}
+
+.work-summary {
+  width: 85%;
+}
+
+.work-highlights {
+  width: 85%;
+}
+
+.employment-projects {
+  width: 85%;
+}
+
+.keywords {
+  width: 85%;
+}
+
+.education-date {
+  margin-top: 10px;
+}
+
+.eductation-container {
+  margin-bottom: 10px;
+}
+
+.projects-title {
+  width: 85%;
 }
