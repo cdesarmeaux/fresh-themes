@@ -104,6 +104,15 @@ main>header>h1 {
   font-size: 1.6em;
   text-transform: uppercase;
   line-height: 1;
+  clear: left;
+}
+
+main>header>span {
+  float: left;
+  font-size: 14px;
+  clear: left;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
 h3 {
@@ -116,11 +125,13 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0;
+  overflow: auto;
 }
 
 #contact>div {
-  display: inline-block;
   margin-left: 5px;
+  float: right;
+  clear: right;
 }
 
 h2>span.fa {
@@ -145,6 +156,7 @@ img {
 #summary {
   overflow: auto;
   gap: 10px;
+  margin-top: 2.5em !important;
 }
 
 #summary .text {
@@ -203,4 +215,8 @@ img {
 
 .projects-title {
   width: 85%;
+}
+
+.first-seperator {
+  margin-top: 0px;
 }

@@ -1,5 +1,5 @@
 {{#section "certifications"}}
-<hr>
+<hr class="first-seperator">
 <section id="certifications">
     <div class="certifications">
         {{#> header-certifications }}
@@ -10,7 +10,7 @@
             <span>
                 {{#each certificates}}
                 {{#if logo}}
-                <img class="media-object logo" src="http://127.0.0.1:3000/resume/out/images/{{logo}}"
+                <img class="media-object logo" src="https://cv.cdesarmeaux.com/images/{{logo}}"
                     alt="{{name}}{{#level}} - {{.}}{{/level}}" title="{{name}}{{#level}} - {{.}}{{/level}}" />
                 {{/if}}
                 {{/each}}

@@ -11,12 +11,13 @@
 <body>
   <main>
     <header>
-      <h1>{{{ r.name }}}</h1>
+      <h1>{{{ r.name }}}</h1><span>{{ r.info.label }}</span>
+      <!-- ,<h2> {{ RAW.info.label }}</h2> -->
       <div id="contact">
         {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email
             }}</a></div>{{/has}}
         {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
-        {{#has 'contact.website'}}<div class="website"> - full resume: <a href="{{{ RAW.contact.website }}}">{{trimURL
+        {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}">{{trimURL
             RAW.contact.website }}</a></div>{{/has}}
       </div>
     </header>
@@ -71,7 +72,7 @@
 
     {{#*inline "body-projects" }}
     <div>
-      <h3 class="projects-title"><em>{{ role }}</em>,
+      <h3 class="projects-title"><em>{{ role }}</em>{{#if url }},{{/if}}
         {{#if url }}
         <a href="{{{ url }}}">{{ title }}</a>
         {{else}}
